@@ -97,10 +97,10 @@ This application is licensed under the MIT License.
 ## Attributions
 
 * [Starter code](https://github.com/coding-boot-camp/fantastic-umbrella) for this project
-* [sequalize](https://sequelize.org/docs/v6/getting-started/)
+* [sequelize](https://sequelize.org/docs/v6/getting-started/)
 * [inquirer.js](https://www.npmjs.com/package/inquirer)
 * [mysql2](https://www.npmjs.com/package/mysql2)
-* How to use [associations](https://sequelize.org/docs/v6/core-concepts/assocs/) in Sequalize
+* How to use [associations](https://sequelize.org/docs/v6/core-concepts/assocs/) in Sequelize
 
 
 ## Questions
