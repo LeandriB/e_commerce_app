@@ -18,9 +18,10 @@ router.get('/', (req, res) => {
     }
   })
   .then(tagData => res.json(tagData))
-  .catch(err);
-  console.log(err);
-  res.status(500).json(err);
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 router.get('/:id', (req, res) => {

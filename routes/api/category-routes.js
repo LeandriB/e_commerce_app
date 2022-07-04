@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
-
 router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
@@ -21,7 +20,6 @@ router.get('/', (req, res) => {
   .then(categoryData => {
     if(!categoryData) {
       res.status(404).json({message: 'No categories found'});
-      return;
     }
     res.json(categoryData);
   })
@@ -39,13 +37,18 @@ router.get('/:id', (req, res) => {
       id: req.params.id
     },
     include: {
-      attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+      attributes: [
+        'id', 
+        'product_name', 
+        'price', 
+        'stock', 
+        'category_id'
+      ]
     }
   })
   .then(categoryData => {
     if(!categoryData) {
       res.status(404).json({message: 'No categories found'});
-      return;
     }
     res.json(categoryData);
   })
@@ -76,7 +79,6 @@ router.put('/:id', (req, res) => {
   .then(categoryData => {
     if(!categoryData) {
       res.status(404).json({message: 'Category not found with given ID'});
-      return;
     }
     res.json(categoryData);
   })
@@ -96,7 +98,6 @@ router.delete('/:id', (req, res) => {
     .then(categoryData => {
         if (!categoryData) {
             res.status(404).json({ message: 'Category not found with given ID' });
-            return;
         }
       res.json(categoryData);
   })
