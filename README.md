@@ -64,7 +64,7 @@ Open application in [Insomnia](https://insomnia.rest/) in order to check routes
 
 ![Preview](./images/preview.png)
 
-Link to [walkthrough](https://youtu.be/73yaXTDskzo) video.
+Link to [walkthrough](https://youtu.be/TfOZdvb7oGc) video.
 
 ## Contributing
 
