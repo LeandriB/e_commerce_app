@@ -50,21 +50,15 @@ Run the following commands in the mysql server:
 
 1. `source db/schema.sql` to create database.
 
-2. `source db/seeds.sql` to seed the database.
+2. `quit` out of mysql
+
+3. `npm run seed` to seed the database.
 
 Start the node application by running: 
 
-`node server.js`
+`npm start`
 
-and follow the user prompts to run through the application.
-
-Run commands in order to view database: 
-
-SELECT * FROM department;
-
-SELECT * FROM role;
-
-SELECT * FROM employee;
+Open application in [Insomnia](https://insomnia.rest/) in order to check routes
 
 ## Usage
 
@@ -98,10 +92,8 @@ This application is licensed under the MIT License.
 
 * [Starter code](https://github.com/coding-boot-camp/fantastic-umbrella) for this project
 * [sequelize](https://sequelize.org/docs/v6/getting-started/)
-* [inquirer.js](https://www.npmjs.com/package/inquirer)
 * [mysql2](https://www.npmjs.com/package/mysql2)
 * How to use [associations](https://sequelize.org/docs/v6/core-concepts/assocs/) in Sequelize
-
 
 ## Questions
 
